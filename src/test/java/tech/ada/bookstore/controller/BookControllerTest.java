@@ -24,6 +24,8 @@ import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Optional;
 
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+
 
 @SpringBootTest
 @AutoConfigureMockMvc
@@ -45,7 +47,9 @@ public class BookControllerTest {
 
     @Test
     public void loadContexto(){
-        Assertions.assertTrue(controller != null);
+
+        assertNotNull(controller);
+       // Assertions.assertTrue(controller != null);
     }
 
 
